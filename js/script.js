@@ -4,5 +4,5 @@ startBtn.addEventListener("click", openTapes);
 
 function openTapes() {
     console.log("Button is clicked");
-    window.location.href = "#";
+    window.location.href = "Tapes.html";
 }
