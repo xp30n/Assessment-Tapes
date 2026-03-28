@@ -17,21 +17,27 @@ body {
 }
 
 .title-el {
-    color: white;
+  color: white;
 }
 
 .btn-container {
-    text-align: center;
+  text-align: center;
 }
 
 .start-btn {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 
-    font-family: "Hacker", sans-serif;
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-family: "Hacker", sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 
-    border: 2px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
+  border: 2px rgb(255, 255, 255) solid;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    color: rgb(9, 189, 249);
+    border: 2px rgb(34, 187, 238) solid;
 }
