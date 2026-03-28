@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/xp30n/Assessment-Tapes#readme",
   "dependencies": {
+    "@swup/overlay-theme": "^2.0.2",
     "swup": "^4.8.3"
   }
 }
