@@ -54,6 +54,6 @@ body {
 
 .start-btn:hover {
   cursor: pointer;
-  color: rgb(9, 189, 249);
-  border: 2px rgb(34, 187, 238) solid;
+  color: rgb(55, 3, 187);
+  border: 2px rgb(55, 3, 187) solid;
 }
