@@ -1,3 +1,7 @@
+import Swup from "swup";
+
+const swup = new Swup();
+
 let startBtn = document.getElementById("start-btn");
 
 startBtn.addEventListener("click", openTapes);
