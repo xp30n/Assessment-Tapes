@@ -25,10 +25,11 @@ body {
 
 .spear-png {
   display: block;
-  width: min(65vw, 350px);
-  max-width: 350px;
+  width: min(65vw, 400px);
+  max-width: 450px;
   height: auto;
   margin: 0 auto;
+  opacity: 0.5;
 }
 
 .title-el {
