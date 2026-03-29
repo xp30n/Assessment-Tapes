@@ -5,11 +5,23 @@ let speechBtn = document.getElementById("speech-btn");
 
 let buttons = document.getElementById("vhs-btns");
 
-skinBtn.addEventListener("click", buttonLog);
-mouthBtn.addEventListener("click", buttonLog);
-eyesBtn.addEventListener("click", buttonLog);
-speechBtn.addEventListener("click", buttonLog);
+skinBtn.addEventListener("click", greenButton);
+mouthBtn.addEventListener("click", yellowButton);
+eyesBtn.addEventListener("click", orangeButton);
+speechBtn.addEventListener("click", redButton);
 
-function buttonLog() {
-    console.log("BUTTON IS CLICKED");
+function greenButton() {
+    console.log("GREEN BUTTON IS CLICKED");
+}
+
+function yellowButton() {
+    console.log("YELLOW BUTTON IS CLICKED");
+}
+
+function orangeButton() {
+    console.log("ORANGE BUTTON IS CLICKED");
+}
+
+function redButton() {
+    console.log("RED BUTTON IS CLICKED");
 }
