@@ -25,3 +25,5 @@ function orangeButton() {
 function redButton() {
     console.log("RED BUTTON IS CLICKED");
 }
+
+// ! ADD ENTRANCE TAPE PAGE
