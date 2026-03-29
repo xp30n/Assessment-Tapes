@@ -19,8 +19,10 @@ body {
 .vhs-btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 70px;
+  gap: 90px;
+  margin-top: -150px;
 }
+
 
 .skin-img {
   display: grid;
@@ -28,6 +30,7 @@ body {
   max-width: 250px;
   height: auto;
   margin: 0 auto;
+  transition: transform 0.5s ease-out;
 }
 
 .skin-btn {
@@ -37,12 +40,18 @@ body {
   padding: 0;
 }
 
+.skin-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
 .mouth-img {
   display: grid;
   width: min(65vw, 250px);
   max-width: 250px;
   height: auto;
   margin: 0 auto;
+  transition: transform 0.5s ease-out;
 }
 
 .mouth-btn {
@@ -52,12 +61,19 @@ body {
   padding: 0;
 }
 
+.mouth-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+
 .eyes-img {
   display: grid;
   width: min(65vw, 250px);
   max-width: 250px;
   height: auto;
   margin: 0 auto;
+  transition: transform 0.5s ease-out;
 }
 
 .eyes-btn {
@@ -67,12 +83,19 @@ body {
   padding: 0;
 }
 
+.eyes-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+
 .speech-img {
   display: grid;
   width: min(65vw, 250px);
   max-width: 250px;
   height: auto;
   margin: 0 auto;
+  transition: transform 0.5s ease-out;
 }
 
 .speech-btn {
@@ -81,3 +104,9 @@ body {
   background: none;
   padding: 0;
 }
+
+.speech-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
