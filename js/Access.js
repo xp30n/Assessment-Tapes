@@ -13,8 +13,8 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   } else {
     setTimeout(() => {
-        window.location.href = "index.html";
-    }, 1000)
+        window.location.href = "Tapes.html";
+    }, 2000)
   }
 }
 
