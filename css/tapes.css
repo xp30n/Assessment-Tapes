@@ -19,10 +19,10 @@ body {
 .vhs-btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 90px;
-  margin-bottom: 280px;
+  row-gap: 7rem;
+  column-gap: 10rem;
+  margin-bottom: 360px;
 }
-
 
 .skin-img {
   display: grid;
@@ -41,8 +41,8 @@ body {
 }
 
 .skin-img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-out;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
 
 .mouth-img {
@@ -62,10 +62,9 @@ body {
 }
 
 .mouth-img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-out;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
-
 
 .eyes-img {
   display: grid;
@@ -84,10 +83,9 @@ body {
 }
 
 .eyes-img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-out;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
-
 
 .speech-img {
   display: grid;
@@ -106,7 +104,30 @@ body {
 }
 
 .speech-img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-out;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-out;
 }
 
+.skin-tape {
+  font-family: "Hacker", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  color: green;
+}
+
+.mouth-tape {
+  font-family: "Hacker", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  color: rgb(186, 192, 0);
+}
+
+.eyes-tape {
+  font-family: "Hacker", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  color: rgb(189, 108, 3);
+}
+
+.speech-tape {
+  font-family: "Hacker", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
+  color: rgb(211, 36, 1);
+}
