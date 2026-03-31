@@ -8,7 +8,9 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: "Hacker", sans-serif;
-  background-color: rgb(0, 0, 0);
+  background: url(../assets/images/tapes-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
 
   display: flex;
@@ -16,12 +18,23 @@ body {
   align-items: center;
 }
 
+.spear-png {
+  display: grid;
+  width: min(65vw, 300px);
+  max-width: 300px;
+  height: auto;
+  opacity: 0.5;
+  justify-content: center;
+  align-items: center;
+}
+
 .vhs-btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 7rem;
-  column-gap: 10rem;
-  margin-bottom: 360px;
+  row-gap: 6rem;
+  column-gap: 35rem;
+  /* margin-bottom: 300px; */
+  margin-top: 70px;
 }
 
 .skin-img {
@@ -108,26 +121,8 @@ body {
   transition: transform 0.5s ease-out;
 }
 
-.skin-tape {
-  font-family: "Hacker", sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2.5rem);
-  color: green;
-}
-
-.mouth-tape {
-  font-family: "Hacker", sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2.5rem);
-  color: rgb(186, 192, 0);
-}
-
-.eyes-tape {
-  font-family: "Hacker", sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2.5rem);
-  color: rgb(189, 108, 3);
-}
-
-.speech-tape {
-  font-family: "Hacker", sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2.5rem);
-  color: rgb(211, 36, 1);
+.video-container {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
 }
