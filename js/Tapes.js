@@ -44,3 +44,9 @@ function redButton() {
     vhsPlayer.play();
 }
 
+// Need to add function to proceed to next page when video is done playing 
+
+function nextPage() {
+    // Proceed to next page
+}
+
