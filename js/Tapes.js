@@ -1,6 +1,3 @@
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::
-// ::                  BUTTON IDS                     ::
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 const skinBtn = document.getElementById("skin-btn");
 const mouthBtn = document.getElementById("mouth-btn");
@@ -11,18 +8,10 @@ const buttons = document.getElementById("vhs-btns");
 
 const vhsPlayer = document.getElementById("vhs-player");
 
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::
-// ::                 EVENT LISTENERS                 ::
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 skinBtn.addEventListener("click", greenButton);
 mouthBtn.addEventListener("click", yellowButton);
 eyesBtn.addEventListener("click", orangeButton);
 speechBtn.addEventListener("click", redButton);
-
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::
-// ::                  FUNCTIONS                      ::
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 function greenButton() {
     console.log("GREEN BUTTON IS CLICKED");
