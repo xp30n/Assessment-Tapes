@@ -14,7 +14,7 @@ eyesBtn.addEventListener("click", orangeButton);
 speechBtn.addEventListener("click", redButton);
 
 function greenButton() {
-    console.log("GREEN BUTTON IS CLICKED");
+    // console.log("GREEN BUTTON IS CLICKED");
     vhsPlayer.play();
 
     vhsPlayer.addEventListener("ended", function() {
@@ -27,16 +27,40 @@ function greenButton() {
 }
 
 function yellowButton() {
-    console.log("YELLOW BUTTON IS CLICKED");
+    // console.log("YELLOW BUTTON IS CLICKED");
     vhsPlayer.play();
+
+    vhsPlayer.addEventListener("ended", function() {
+        document.body.classList.add("fade-out");
+    
+        setTimeout(() => {
+            window.location.href = "../html/Mouth.html";
+        }, 1000);
+    })
 }
 
 function orangeButton() {
-    console.log("ORANGE BUTTON IS CLICKED");
+    // console.log("ORANGE BUTTON IS CLICKED");
     vhsPlayer.play();
+
+    vhsPlayer.addEventListener("ended", function() {
+        document.body.classList.add("fade-out");
+    
+        setTimeout(() => {
+            window.location.href = "../html/Eyes.html";
+        }, 1000);
+    })
 }
 
 function redButton() {
-    console.log("RED BUTTON IS CLICKED");
+    // console.log("RED BUTTON IS CLICKED");
     vhsPlayer.play();
+
+    vhsPlayer.addEventListener("ended", function() {
+        document.body.classList.add("fade-out");
+    
+        setTimeout(() => {
+            window.location.href = "../html/Speech.html";
+        }, 1000);
+    })
 }
