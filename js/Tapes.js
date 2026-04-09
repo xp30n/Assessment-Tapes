@@ -16,6 +16,14 @@ speechBtn.addEventListener("click", redButton);
 function greenButton() {
     console.log("GREEN BUTTON IS CLICKED");
     vhsPlayer.play();
+
+    vhsPlayer.addEventListener("ended", function() {
+        document.body.classList.add("fade-out");
+    
+        setTimeout(() => {
+            window.location.href = "../html/Skin.html";
+        }, 1000);
+    })
 }
 
 function yellowButton() {
@@ -32,10 +40,3 @@ function redButton() {
     console.log("RED BUTTON IS CLICKED");
     vhsPlayer.play();
 }
-
-// Need to add function to proceed to next page when video is done playing 
-
-function nextPage() {
-    // Proceed to next page
-}
-
