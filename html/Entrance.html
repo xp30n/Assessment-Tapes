@@ -8,8 +8,17 @@
 </head>
 <body>
     <main class="main-container">
-        <div class="welcome-container" id="welcome-container">
-            <p class="welcome-el" id="welcome-el">WELCOME TO THE ASSESSMENT TAPES</p>
+
+        <div class="video-container" id="video-container">
+            <video id="entrance-tape" class="entrance-tape" width="1000" paused>
+              <source src="../assets/videos/entrance_welcome.webm" type="video/webm">
+            </video> 
+          </div>
+
+          <div id="play-button" class="play-button">
+            <button id="play-btn" class="play-btn">
+                PLAY
+            </button>
         </div>
 
         <div id="temp-button" class="temp-button">
@@ -17,6 +26,7 @@
                 NEXT PAGE
             </button>
         </div>
+
     </main>
     <script src="../js/Entrance.js"></script>
 </body>
