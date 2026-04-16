@@ -4,7 +4,7 @@ let playBtn = document.getElementById("play-button");
 
 nextBtn.addEventListener("click", function() {
     // console.log("Button is clicked");
-    window.location.href = "../html/Tapes.html";
+    window.location.href = "../html/Entrance.html";
 })
 
 playBtn.addEventListener("click", function() {

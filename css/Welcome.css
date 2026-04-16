@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; /* optional but makes it look clean */
+  gap: 1rem;
 }
 
 .welcome-el {
