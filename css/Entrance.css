@@ -37,6 +37,11 @@ body {
   border: 2px rgb(255, 255, 255) solid;
   border-radius: 10px;
   padding: 0.5rem 1rem;
+
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .next-btn:hover {
@@ -49,4 +54,9 @@ body {
   font-size: clamp(2.5rem, 1.5vw, 1rem);
   margin-top: 1rem;
   color: rgb(255, 234, 0);
+  text-align: center;
+}
+
+p {
+  color: white;
 }
