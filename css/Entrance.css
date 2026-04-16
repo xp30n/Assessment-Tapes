@@ -20,9 +20,31 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 p {
-    color: white;
+  color: white;
+}
+
+.next-button {
+  text-align: center;
+}
+
+.next-btn {
+  background: black;
+  color: white;
+
+  font-family: "Hacker", sans-serif;
+  font-size: clamp(1.5rem, 1.5vw, 1rem);
+
+  border: 2px rgb(255, 255, 255) solid;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.next-btn:hover {
+  cursor: pointer;
+  color: rgb(138, 138, 138);
+  border: 2px rgb(138, 138, 138) solid;
 }
