@@ -22,12 +22,21 @@ let isTyping = false;
 
 entranceEl.innerHTML = "";
 
+const typingSound = document.getElementById("typing-sounds");
+
+typingSound.pause();
+typingSound.currentTime = 0;
+typingSound.volume = 0.2;
+
+
 // console.log(entranceEl);
 
 function typeLine() {
   if (lineIndex >= entranceText.length) return;
 
   isTyping = true;
+  typingSound.currentTime = 0;
+  typingSound.play();
 
   const isLastLine = lineIndex === entranceText.length - 1;
 
@@ -35,8 +44,12 @@ function typeLine() {
     if (charIndex < entranceText[lineIndex].length) {
       entranceEl.innerHTML += entranceText[lineIndex][charIndex];
       charIndex++;
+      typingSound.play();
       setTimeout(typeChar, speed);
     } else {
+      typingSound.pause();
+      typingSound.currentTime = 0;
+
       entranceEl.innerHTML += "<br><br>";
       charIndex = 0;
       lineIndex++;
