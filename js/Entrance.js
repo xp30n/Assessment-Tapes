@@ -5,7 +5,7 @@ nextPageBtn.style.opacity = 0;
 const entranceEl = document.getElementById("title-el");
 
 const entranceText = [
-  "WELCOME TO THE ENTRANCE TAPES",
+  "WELCOME TO THE ENTRANCE TAPES.",
   "CORPUS CONSUMPTION COMPULSION TRANSFIGURATION,",
   "ALSO KNOWN AS C.C.C.T.,",
   "IS THE RESEARCH OF CANNIBALISTIC SUPERNATURAL CHANGES",
@@ -14,7 +14,7 @@ const entranceText = [
   "CONDUCTED BY THE SPEAR OF HERMES SUPERNATURAL RESEARCH CENTRE.",
 ];
 
-const speed = 100;
+const speed = 80;
 
 let lineIndex = 0;
 let charIndex = 0;

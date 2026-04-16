@@ -10,5 +10,3 @@ nextBtn.addEventListener("click", function() {
 playBtn.addEventListener("click", function() {
     entranceTape.play();
 });
-
-// ! ADD ENTRANCE TAPE PAGE 
