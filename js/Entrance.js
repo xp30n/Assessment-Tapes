@@ -52,7 +52,7 @@ function typeLine() {
 }
 
 nextPageBtn.addEventListener("click", function () {
-  window.location.href = "../html/Tapes.html"
+  window.location.href = "../html/Entrance2.html"
   console.log("Button is clicked");
 });
 
