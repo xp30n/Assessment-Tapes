@@ -23,10 +23,6 @@ body {
   gap: 1rem;
 }
 
-p {
-  color: white;
-}
-
 .next-button {
   text-align: center;
 }
@@ -47,4 +43,10 @@ p {
   cursor: pointer;
   color: rgb(138, 138, 138);
   border: 2px rgb(138, 138, 138) solid;
+}
+
+.title-el {
+  font-size: clamp(2.5rem, 1.5vw, 1rem);
+  margin-top: 1rem;
+  color: rgb(255, 234, 0);
 }
