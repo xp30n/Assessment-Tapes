@@ -13,7 +13,7 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   } else {
     setTimeout(() => {
-        window.location.href = "Entrance.html";
+        window.location.href = "Welcome.html";
     }, 2000)
   }
 }
