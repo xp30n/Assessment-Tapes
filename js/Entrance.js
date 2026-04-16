@@ -1,59 +1,67 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const nextPageBtn = document.getElementById("next-btn");
-  nextPageBtn.addEventListener("click", function () {
-    console.log("Button is clicked");
-  });
+const nextPageBtn = document.getElementById("next-btn");
 
-  const entranceEl = document.getElementById("title-el");
+nextPageBtn.style.opacity = 0;
 
-  const entranceText = [
-    "WELCOME TO THE ENTRANCE TAPES",
-    "CORPUS CONSUMPTION COMPULSION TRANSFIGURATION,",
-    "ALSO KNOWN AS C.C.C.T.,",
-    "IS THE RESEARCH OF CANNIBALISTIC SUPERNATURAL CHANGES",
-    "WITHIN HUMANS.",
-    "THIS TAPE IS TO INTRODUCE YOU TO THIS THE RESEARCH",
-    "CONDUCTED BY THE SPEAR OF HERMES SUPERNATURAL RESEARCH CENTRE.",
-  ];
+const entranceEl = document.getElementById("title-el");
 
-  const speed = 100;
+const entranceText = [
+  "WELCOME TO THE ENTRANCE TAPES",
+  "CORPUS CONSUMPTION COMPULSION TRANSFIGURATION,",
+  "ALSO KNOWN AS C.C.C.T.,",
+  "IS THE RESEARCH OF CANNIBALISTIC SUPERNATURAL CHANGES",
+  "WITHIN HUMANS.",
+  "THIS TAPE IS TO INTRODUCE YOU TO THE RESEARCH",
+  "CONDUCTED BY THE SPEAR OF HERMES SUPERNATURAL RESEARCH CENTRE.",
+];
 
-  let lineIndex = 0;
-  let charIndex = 0;
-  let isTyping = false;
+const speed = 100;
 
-  entranceEl.innerHTML = "";
+let lineIndex = 0;
+let charIndex = 0;
+let isTyping = false;
 
-  console.log(entranceEl)
+entranceEl.innerHTML = "";
 
-  function typeLine() {
-    if (lineIndex >= entranceText.length) return;
+// console.log(entranceEl);
 
-    isTyping = true;
+function typeLine() {
+  if (lineIndex >= entranceText.length) return;
 
-    function typeChar() {
-      if (charIndex < entranceText[lineIndex].length) {
-        entranceEl.innerHTML += entranceText[lineIndex][charIndex];
-        charIndex++;
-        setTimeout(typeChar, speed);
-      } else {
-        entranceEl.innerHTML += "<br><br>";
-        charIndex = 0;
-        lineIndex++;
-        isTyping = false;
+  isTyping = true;
+
+  const isLastLine = lineIndex === entranceText.length - 1;
+
+  function typeChar() {
+    if (charIndex < entranceText[lineIndex].length) {
+      entranceEl.innerHTML += entranceText[lineIndex][charIndex];
+      charIndex++;
+      setTimeout(typeChar, speed);
+    } else {
+      entranceEl.innerHTML += "<br><br>";
+      charIndex = 0;
+      lineIndex++;
+      isTyping = false;
+
+      if (lineIndex >= entranceText.length) {
+        nextPageBtn.style.opacity = 1;
       }
     }
-
-    typeChar();
   }
 
-  document.addEventListener("keydown", (e) => {
-    if (e.code === "Space" || e.key === " ") {
-      e.preventDefault();
+  typeChar();
+}
 
-      if (!isTyping) {
-        typeLine();
-      }
+nextPageBtn.addEventListener("click", function () {
+  window.location.href = "../html/Tapes.html"
+  console.log("Button is clicked");
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.code === "Space" || e.key === " ") {
+    e.preventDefault();
+
+    if (!isTyping) {
+      typeLine();
     }
-  });
+  }
 });
