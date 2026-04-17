@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Speech.css">
+    <link rel="stylesheet" href="../css/Welcome.css">
     <title>SPEECH</title>
 </head>
 <body>
-    <p>THIS IS THE SPEECH PAGE</p>
+    <main class="main-container">
+
+        <div class="video-container" id="video-container">
+            <video id="tape4" class="tape4" width="1000" paused>
+              <source src="../assets/videos/Tape4.webm" type="video/webm">
+            </video> 
+          </div>
+
+          <div id="play-button" class="play-button">
+            <button id="play-btn" class="play-btn">
+                ▶︎ PLAY
+            </button>
+        </div>
+    </main>
+
+    <script src="/js/Speech.js"></script>
 </body>
 </html>
