@@ -8,4 +8,4 @@ playBtn.addEventListener("click", function() {
 
 entranceTape.addEventListener("ended", function() {
     window.location.href = "../html/Tapes.html";
-})
+});
